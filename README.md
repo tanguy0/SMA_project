@@ -49,7 +49,3 @@ Wilensky, U. (1997). NetLogo Wolf Sheep Predation model. http://ccl.northwestern
 
 See also the [Lotka–Volterra equations
 ](https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations) for an example of a classic differential-equation model with similar dynamics.
-
-
-
-Bye bye
