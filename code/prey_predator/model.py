@@ -95,16 +95,21 @@ class WolfSheep(Model):
             # Add the agent to his grid cell
             self.grid.place_agent(sheep, (x, y))
 
-        '''
+        
         # Create wolves
         for i in range(self.initial_wolves):
-            wolf = Wolf(i, self)
-            self.schedule.add(wolf)
-            # Add the agent to a random grid cell
+            # Randomly choose an initial position
             x = self.random.randrange(self.grid.width)
             y = self.random.randrange(self.grid.height)
+            pos = (x, y)
+            # Initialiaze the agent
+            energy = self.wolf_gain_from_food
+            moore = True
+            wolf = Wolf(i, pos, energy, moore, self)
+            self.schedule.add(wolf)
+            # Add the agent to his grid cell
             self.grid.place_agent(wolf, (x, y))
-        '''
+        
 
         # Create grass patches
         for x in range(self.grid.width):

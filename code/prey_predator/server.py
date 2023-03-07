@@ -18,7 +18,7 @@ def wolf_sheep_portrayal(agent):
         portrayal["r"] = 0.5
 
     elif type(agent) is Wolf:
-        portrayal["Color"] = "ref"
+        portrayal["Color"] = "red"
         portrayal["Layer"] = 2
         portrayal["r"] = 0.8
 
