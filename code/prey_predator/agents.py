@@ -126,7 +126,7 @@ class Wolf(RandomWalker):
         # Die
         self.die()
         
-        
+#OKKK
         
         
         
